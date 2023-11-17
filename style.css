@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  background-color: skyblue;
+}
+
+.container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.imgContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.filebox {
+  padding-left: 5rem;
+  margin-bottom: 2rem;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+}
+.result > p {
+  width: 250px;
+}
+.videolists {
+  width: 100%;
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 280px);
+  grid-template-rows: repeat(5, 235px);
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+  justify-content: center;
+}
+
+.video:hover {
+  transform: scale(1.05);
+  transition: all 150ms ease-in;
+}
+
+.video {
+  width: 300px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.thumbnail {
+  padding-top: 0.5rem;
+  margin: auto;
+}
+.description {
+  padding: 0 0 10px 10px;
+  margin: 0;
+}
+
+.des_title {
+  font-weight: bold;
+  width: 280px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0.5rem 0 0 0;
+}
+.des_channel {
+  font-weight: 500;
+  margin: 0;
+  font-size: small;
+  color: gray;
+}

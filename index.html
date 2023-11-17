@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>헬스 머신 분류</h1>
+      </header>
+
+      <div class="imgContainer">
+        <form class="imgForm">
+          <div class="filebox">
+            <label for="file">사진 업로드</label>
+            <input type="file" id="file" />
+          </div>
+          <img id="preview" width="200px" height="200px" />
+        </form>
+        <button class="inputBtn">머신 분석하기</button>
+      </div>
+
+      <div class="result">
+        <p class="machineName">머신 분석 결과 :</p>
+        <button class="serchBtn">사용법 확인</button>
+      </div>
+    </div>
+
+    <ul class="videolists"></ul>
+  </body>
+</html>
